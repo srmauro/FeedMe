@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suscripción</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Lora|Roboto|Work+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/EstilosFeedMe.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../css/fontello.css">		
+		<script type="text/javascript" src="../js/validar.js"></script>
+	</head>
+	<body>
+		<header>
+
+			<div class="title">
+
+				<div class="espacio"></div>
+
+				<div class="titutlo"><h1>FeedMe</h1></div>
+
+				<div class="redes">
+					<span class="icon-instagram"></span>
+					<span class="icon-twitter"></span>
+					<span class="icon-facebook-squared"></span>
+					<span class="icon-mail-alt"></span>
+					<a href="suscripcion.html" class="btnsuscrip">Suscripciòn</a>
+				</div>
+
+			</div>
+
+			<div class="activo">
+
+				<input type="checkbox" name="" id="icon-btnmenu">
+
+				<label for="icon-btnmenu" class="icon-menu"></label>
+
+				<nav class="menu">
+
+						<ul class="manu2">
+
+							<li><a href="../index.html">Inicio</a></li>
+
+							<li><a href="Alimentacion.html">Alimentaciòn</a></li>
+
+							<li class="desplegar"><a href="Recetas.html">Recetas<span class="icon-down-dir"></span></a>
+								<ul>
+									<li class="rt"><a href="classRecetas/Proteina.html">Proteinas</a></li>
+									<li class="rt"><a href="classRecetas/Carbohidratos.html">Carbohidratos</a></li>
+									<li class="rt"><a href="classRecetas/Recetas vegenas.html">Recetas Veganas</a></li>
+									<li class="rt"><a href="classRecetas/Recetas vegetarianar.html">Recetas Vegetarianas</a></li>
+									<li class="rt"><a href="classRecetas/Dulces.html">Dulce</a></li>
+									<li class="rt"><a href="classRecetas/Salado.html">Salado</a></li>
+									<li class="rt"><a href="classRecetas/Paleos.html">Paleo</a></li>
+								</ul>
+							</li>
+
+							<li><a href="Tips.html">Tips</a></li>
+
+							<li class="btnsuscrip"><a href="suscripcion.html" class="susa">Suscripciòn</a></li>
+
+						</ul>
+				</nav>
+
+			</div>
+
+		</header>	
+			<section id="sus-section">
+				<img src="../imgFeedMe/bread-2796393__340.jpg" class="img-suscrip">
+				<div id="modal">
+					<div class="post-modal">
+						<div class="conten-modal">
+							<div class="Suscripciòn"><h2>Suscripción</h2></div>
+						</div> 
+
+						<form action="suscripcion.php" method="post" class="form-register" onsubmit="return validar();" name="form">
+
+							<input type="text" name="nombre" placeholder="Ingresa tu nombre" id="nombre" class="campos" >
+							<input type="text" name="apellidos" placeholder="Ingresa tu apellidos" id="apellidos" class="campos" >
+							<input type="text" name="email" placeholder="Ingresa tu Email" id="email" class="campos" >
+							<input type="submit" value="Sucribirse" class="btn-enviar">
+							
+						</form>
+					</div>
+				</div>
+				<img src="../imgFeedMe/rachel-park-366508-unsplash.jpg" class="img-suscrip">		
+			</section>
+		<footer>
+			<div class="emcabezado-footer">
+				<h1>FeedMe</h1>
+			</div>
+			<div class="redes-footer">
+				<h2>ESTAMOS EN CONTACTO</h2>
+				<div class="sub-rf">
+					<span class="icon-instagram"></span>
+					<span class="icon-twitter"></span>
+					<span class="icon-facebook-squared"></span>
+					<span class="icon-mail-alt"></span>
+					<a href="suscripcion.html">Suscripciòn</a>
+				</div>
+			</div>	
+		</footer>
+	</body>
+</html>

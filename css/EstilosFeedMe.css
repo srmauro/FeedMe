@@ -1,0 +1,943 @@
+ 
+
+
+*{
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0%;
+	padding: 0%;
+	text-decoration: none;
+
+}
+img{
+	width: 100px;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Menu ----------------------------------------*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+/*----------------------------*/
+header{
+	width: 100%;
+}
+/*----------------------------*/
+.title{
+	display: flex;
+	width: 100%;
+	/*background: rgb(16 89 171);*/
+	background: #FFD13A;	
+	align-items: baseline;
+	padding: 6px 0px;	
+}
+.title > *{
+	width: 33.33%;
+}
+.title h1{
+	font-size: 4em;
+	color: rgba(0, 0, 40);
+	font-family: 'Lobster', cursive;
+	margin-right: 4px;
+	text-align: center;	
+}
+
+.title .redes{
+	
+	display: flex;
+	justify-content: flex-end;
+	color: rgba(0, 0, 40);
+	font-size: 1.3em;
+	margin-right: 10px;
+	margin-left: 10px;
+
+}
+.title .redes a {
+	color: rgba(0, 0, 40);
+	font-size: 0.7em;
+	border: solid 1px rgba(0, 0, 40);
+	padding: 3px;
+	margin-left: 5px;
+}
+.redes span:hover{
+	cursor: pointer;
+}
+/*-----------------------------------------------*/
+.activo{
+	height: 35px;
+	box-shadow: 10px 5px 5px #F5F5F5;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.activo label{
+	font-size: 1.5em;
+	cursor: pointer;
+	display: none;
+}
+#icon-btnmenu{
+	display: none;
+}
+.menu ul{
+	display: flex;
+}
+.menu ul ul{
+	display: none;
+}
+.menu a{
+	display: block;
+	padding: 7px 7px;
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.9em;
+}
+.menu a:hover{
+	text-decoration: underline;
+	color: #FFD13A;
+}
+.menu ul li:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+.menu ul li:hover ul li{
+	border-top: 2px solid #F5F5F5;
+	background: white;
+}
+.menu ul li:hover ul a{
+	color: #FFD13A;	
+}
+@media (max-width: 770px){
+	.activo {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.activo label{
+		display: block;
+		
+	}	
+	.activo .menu{
+		position: absolute;
+		top: 110px;
+		left: 0px;
+		width: 30%;
+		box-shadow: 5px 5px 5px #F5F5F5;
+		transform: translateX(-100%);
+		transition: all 0.2s;
+		z-index: 3;
+	}
+	.menu li{
+		border-top: 2px solid #F5F5F5;
+		background: white;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu ul li:hover ul{
+		display: none;
+		position: static;
+	}
+	.menu a span{
+		position: absolute;
+		right: 5px;
+	}
+	#icon-btnmenu:checked ~ .menu{
+		transform: translateX(0%);
+	}
+
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- BANER ----------------------------------------*/
+.slideshow{
+	width: 100%;
+}
+
+.slideshow .prebaner{
+	width: 100%;
+}
+.slideshow .prebaner  img{
+	width: 100%;
+}
+.prep{
+	position: absolute;
+	top:98%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.prep .pagination{
+	display: flex;
+}
+.prep .pagination  li{
+	font-size: 0.9em;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Section -------------------------------------*/
+section {
+	width: 100%;
+	display: flex;
+	padding: 2% 2%;
+
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Lista de recetas -----------------------------*/
+.listaDeRecetas1{
+	width: 30%;
+	margin: 0% 0% 0% 2%;
+}
+.listaDeRecetas1 > img{
+	width: 100%;
+	margin-top: 3%;
+}
+.prea{
+	 margin-bottom: 2px;
+	border-radius: 20px;
+	padding: 5px 20px;
+	background: #FFD13A;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.listaDeRecetas1 .prea > img{
+	width: 1.5em;
+	margin: 0px 10px 0px 0px;
+}
+.listaDeRecetas1 .prea > span{
+	font-size: 1.1em;
+}
+.listaDeRecetas1 .prea > a{
+	font-size: 1.8em;	
+	font-family: 'Lobster', cursive;
+	color: rgb(0, 0, 40);
+	margin-right: 50%;
+}
+
+.listaDeRecetas1 ul{
+	width: 100%;
+	position: relative;
+}
+.listaDeRecetas1 ul li{
+	width: 100%;	
+	margin-bottom: 2px;
+	font-size: 1.1em;
+	padding: 10px;
+	color: #FFD13A;
+	background: rgb(0, 0, 40);
+	border-radius: 20px;
+	padding-left: 20px;
+}
+.rt a{
+	color: #FFD13A;
+	font-family: 'Lora', serif;
+	font-size: 0.9em;
+}
+.rt a:hover{
+	text-decoration: underline;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- contenido index -----------------------------*/
+.cuerpo{
+	width: 70%;
+}
+.cuerpo > a{
+	font-family: 'Lora', serif;
+	color: rgb(0, 0, 40);
+	font-size: 1.8em;
+	display: block;
+	border-bottom: solid 2px #2b2b2b;
+	margin-bottom: 2%;
+}
+.cuerpo .consejos{
+	width: 100%;
+}
+
+/*----------------------------------------*/
+.consejos .ultimaEntrada{
+	width: 100%;
+}	
+/*-----------------------------------------*/
+.receta{
+	display: flex;
+	margin-bottom: 3%; 
+}
+.receta > a{
+	width: 50%;
+}
+.receta > a img{
+	width: 100%;
+	height: 275px;
+}
+.receta > .conr{
+	width: 50%;
+	height: 275px;
+	/*background: green;*/
+	padding: 4%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.receta .conr > *{
+	margin-bottom: 7%;
+	font-family: 'Roboto', sans-serif;
+}
+/*--------------------------------*/
+.receta .conr .prebot{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+/*-------------------------------*/
+.receta .conr #title{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.receta .conr p{
+	font-size: 0.9em;
+}
+.receta .conr .boton{
+	width: 40%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.receta .conr .boton:hover{
+	color: #FFD13A;
+	border: solid 2px #FFD13A;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- FOOTER--------- -----------------------------*/
+footer{
+	width: 100%;
+	height: 18%;
+	display: flex;
+	background: #EFEFEF;
+	padding: 3% ;
+}
+/*------------------------------------*/
+.emcabezado-footer{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+.emcabezado-footer h1{
+	font-size: 4em;
+	color: rgba(0, 0, 40);
+	font-family: 'Lobster', cursive;
+	margin-right: 4px;
+	text-align: center;	
+}
+
+/*------------------------------------*/
+.redes-footer{
+	width: 50%;
+	text-align: right;
+}
+.redes-footer h2{
+	font-size: 1.2em;
+	font-family: 'Lora', serif;
+	border-bottom: solid 2px rgb(0, 0, 40);
+	margin-bottom: 10px;
+	color: rgb(0, 0, 40);
+}
+.redes-footer .sub-rf{
+	display: flex;
+	justify-content: flex-end;
+	color: rgb(245, 193, 14);
+	font-size: 1.3em;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.redes-footer .sub-rf a{
+	color: rgb(245, 193, 14);
+	font-size: 0.7em;
+	border: solid 1px rgb(245, 193, 14);
+	padding: 3px;
+	margin-left: 5px;
+}
+.redes-footer .sub-rf:hover{
+	cursor: pointer;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- TIPS CONTENIDO-------------------------------*/
+.articulo{
+	width: 70%;
+	
+}
+.sub-articulo{
+	width: 100%;
+	display: flex;
+	margin-bottom: 2.5%;
+	align-items: center;
+	padding: 10px;
+	border: solid 2px #EFEFEF;
+}
+.sub-articulo img{
+	width: 30%;
+	height: 150px;
+	margin-right: 2.5%;
+}
+.sub-articulo .textosubarticulo{
+	width: 70%;
+}	
+/*--------------------------------------------------------------------*/
+.sub-articulo .textosubarticulo a h2{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.sub-articulo .textosubarticulo p{
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.sub-articulo .textosubarticulo .leer{
+	width: 30%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.sub-articulo .textosubarticulo >*{
+	margin-bottom: 6%;
+}
+
+.sub-articulo .textosubarticulo .leer:hover{
+	color: #FFD13A;
+	border: solid 2px #FFD13A;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- ALIMENTACION CONTENIDO-----------------------*/
+.contenidoPrincipal{
+	width: 70%;
+	text-align: justify;
+	
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
+}
+.contenidoPrincipal p{
+	text-indent: 3em;
+	font-size: 0.9em;
+	line-height: 2;
+}
+/*-------------------------------------------------------*/
+#piramide{	width: 50%;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#frecuencia{
+	width: 100%;
+	float: left;
+	margin-top:   10px;
+	margin-bottom: 10px;
+}
+#batido{
+	width: 40%;
+	float: left;
+	margin-right:  10px;
+	margin-bottom: 10px;
+	margin-top:   10px;
+}
+#panque{
+	width: 40%;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right:  10px;
+}
+#frasco{
+	width: 40%;
+	float: left;
+	margin-right:  10px;
+	margin-bottom: 10px;
+	margin-top:   10px;
+}
+/*-------------------------------*/
+/*-----------------------------------*/
+.precontenido{
+	display: flex;
+}
+/*-------------------------------------*/
+
+
+/*-----------------------------------------*/
+#tabal1{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 25px 0px;
+	margin-left: 13.5%;
+	background: #FFD13A;
+	box-shadow: 0px 1px 4px 0px #2b2b2b;
+}
+
+#tabal1 a{
+	font-family: 'Lora', serif;
+	color: rgb(0, 0, 40);
+}
+#valorN{
+	margin: 15px 0px;
+	font-family: 'Lora', serif;
+
+}
+/*------------------------------------------*/
+.nutrientes{
+	margin-left: 9%;
+	margin-bottom: 5%;
+}
+.nutrientes ul li {
+	list-style: disc;
+	margin: 10px 0px;
+	font-size: 0.9em;
+	width: 85%;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- RECETAS CONTENIDO-----------------------*/
+ section > .prerecetas{
+	width: 70%;
+	
+}
+.derecha{
+	width: 100%;
+	display: flex;
+	margin-bottom:2.5%;
+}
+.derecha .textoDerecha{
+	width: 50%;	
+	margin-right: 2.5%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.derecha .textoDerecha > *{
+	margin-bottom: 7%;
+}
+.derecha >img{
+	width: 49%;
+	height: 275px;	
+}
+.derecha .textoDerecha h2{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.derecha .textoDerecha p{
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+}
+.derecha .textoDerecha .prebot{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.derecha .textoDerecha .verReceta{
+	width: 30%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.derecha .textoDerecha .verReceta:hover{
+	border: solid 2px #FFD13A;
+	color: #FFD13A;
+}
+.izquierda{
+	width: 100%;
+	display: flex;
+	margin-bottom:2.5%;
+}
+.izquierda .textoIzquierda{
+	width: 50%;
+	margin-left: 2.5%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.izquierda .textoIzquierda > *{
+	margin-bottom: 7%;
+}
+.izquierda .textoIzquierda h2{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.izquierda img{
+	width: 48.5%;
+	height: 275px;	
+}
+.izquierda .textoIzquierda p{
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+}
+.izquierda .textoIzquierda .verReceta{
+	width: 30%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.izquierda .textoIzquierda .verReceta:hover{
+	border: solid 2px #FFD13A;
+	color: #FFD13A;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Section -------------------------------------*/
+
+
+#sectionRectasOpen .recetasOpen{
+	width: 70%;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	text-align: justify;
+}
+#sectionRectasOpen .recetasOpen  img{
+	float: right;
+	width: 50%;
+	height: 300px;	
+	margin-left: 2%;
+}
+#sectionRectasOpen .recetasOpen h2{
+	font-family: 'Lora', serif;
+	margin: 2% 0%;
+}
+#sectionRectasOpen .recetasOpen > ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Tips Abierto --------------------------------*/
+.articulo{
+	width: 70%;
+}
+.articulo > img{
+	width: 100px;
+}
+#img1{
+	width: 50%;
+	float: right;
+	margin: 0% 0% 1% 4%;
+}
+.articulo p{
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	text-indent: 3em;
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 0.5em;
+}
+#img2{
+	float: left;
+	width: 55%;
+	margin: 4% 4% 4% 0%;
+}
+.articulo h2{
+	font-family: 'Lora', serif;
+	margin-bottom: 1em;
+}
+#img3{
+	width: 30%;
+	
+}
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Tips Abierto --------------------------------*/
+
+
+
+
+.proteina{
+	width: 70%;
+	
+}
+.proteina > h2{
+	font-size: 2em;
+	color: rgb(0, 0, 40);
+	font-family: 'Lora', serif;
+	margin-bottom: 3%;
+	border-bottom: solid 2px #f2f2f2;
+	width: 100%;
+}
+/*---------------------------------------------------*/
+.proteina .derecha {
+	width: 100%;
+	display: flex;	
+	margin-bottom: 2.5%;
+}
+.proteina .derecha .textoDerecha{
+	width: 50%;
+	
+	margin-right: 2.5%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.proteina .derecha .textoDerecha > *{
+	margin-bottom: 7%;
+}
+.proteina .derecha >img{
+	width: 49%;
+	height: 275px;
+	
+}
+.proteina .derecha .textoDerecha h2{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.proteina .derecha .textoDerecha p{
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+}
+.proteina .derecha .textoDerecha .prebot{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.proteina .derecha .textoDerecha .verReceta{
+	width: 30%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.proteina .derecha .textoDerecha .verReceta:hover{
+	border: solid 2px #FFD13A;
+	color: #FFD13A;
+}
+/*-------------------------------------------------*/
+.proteina .izquierda{
+	width: 100%;
+	display: flex;
+	margin-bottom:2.5%;
+
+}
+.proteina .izquierda .textoIzquierda{
+	width: 50%;
+	margin-left: 2.5%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.proteina .izquierda .textoIzquierda > *{
+	margin-bottom: 7%;
+}
+.proteina .izquierda .textoIzquierda h2{
+	font-family: 'Lora', serif;
+	color: black;
+	font-size: 1.4em;
+}
+.proteina .izquierda img{
+	width: 48.5%;
+	height: 275px;	
+}
+.proteina .izquierda .textoIzquierda p{
+	font-size: 0.9em;
+	font-family: 'Roboto', sans-serif;
+}
+.proteina .izquierda .textoIzquierda .verReceta{
+	width: 30%;
+	border: solid 2px black;
+	text-align: center;
+	padding: 3px;
+	border-radius: 10px;
+	font-size: 0.9em;
+	font-family: 'Lora', serif;
+	color: black;
+}
+.proteina .izquierda .textoIzquierda .verReceta:hover{
+	border: solid 2px #FFD13A;
+	color: #FFD13A;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*--------------------------------- Modal---------- -----------------------------*/
+
+#modal{
+	width: 35%;
+	height: 100%;
+	display: flex;	
+	
+}
+#modal .post-modal{
+	width: 100%;
+	margin: auto;
+	background: rgba(255, 209, 58, 0.8);
+	border-radius: 20px;
+		
+}
+.conten-modal{
+	width: 100%;
+	background: rgb(0, 0, 40);
+	padding: 20px;
+	margin-bottom: 30px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.Suscripciòn{
+	width: 80%;
+	border-bottom: solid 2.5px  #FFD13A;
+	margin: auto;
+	
+}
+.Suscripciòn h2{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+	color: #FFD13A;
+}
+.form-register{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.campos{
+	width: 80%;
+	border-radius: 20px;
+	border: solid rgb(0, 0, 40);
+	padding: 7px;
+	background: none;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.btn-enviar{
+	width: 30%;
+	background: rgb(0, 0, 40);
+	border: none;
+	font-size: 1em;
+	border-radius: 30px;
+	margin: auto;
+	color: #FFD13A;
+	padding: 8px;
+	font-family: 'Lobster', cursive;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.btn-enviar:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+#sus-section{
+	align-items: center;
+}
+.img-suscrip{
+	width: 32.5%;
+	height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
